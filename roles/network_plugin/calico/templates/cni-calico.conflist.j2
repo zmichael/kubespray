@@ -27,7 +27,7 @@
 {% if calico_ipam_host_local is defined %}
       "ipam": {
         "type": "host-local",
-        "subnet": "usePodCidr"
+        "ranges": [[{ "subnet": "usePodCidr" }]]
       },
 {% else %}
       "ipam": {
